@@ -10,7 +10,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.jpa.hibernate</groupId>
+	<groupId>com.SpringbootPracticewithJpas.jpa.hibernate</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -107,10 +107,10 @@
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/demo/DemoApplication.java
+### /src/main/java/com/SpringbootPracticewithJpas/jpa/hibernate/demo/DemoApplication.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -125,10 +125,10 @@ public class DemoApplication {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/demo/entity/Course.java
+### /src/main/java/com/SpringbootPracticewithJpas/jpa/hibernate/demo/entity/Course.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.entity;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -171,10 +171,10 @@ public class Course {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/hibernate/demo/DemoApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpas/jpa/hibernate/demo/DemoApplicationTests.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

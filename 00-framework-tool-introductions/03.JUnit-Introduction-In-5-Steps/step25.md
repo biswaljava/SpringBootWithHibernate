@@ -2,10 +2,10 @@
 ## Complete Code Example
 
 
-### /in28Minutes/git/getting-started-in-5-steps/junit-in-5-steps/src/com/in28minutes/junit/MyMath.java
+### /SpringbootPracticewithJpas/git/getting-started-in-5-steps/junit-in-5-steps/src/com/SpringbootPracticewithJpas/junit/MyMath.java
 
 ```java
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpas.junit;
 
 public class MyMath {
 	int sum(int[] numbers) {
@@ -19,10 +19,10 @@ public class MyMath {
 ```
 ---
 
-### /in28Minutes/git/getting-started-in-5-steps/junit-in-5-steps/test/com/in28minutes/junit/AssertTest.java
+### /SpringbootPracticewithJpas/git/getting-started-in-5-steps/junit-in-5-steps/test/com/SpringbootPracticewithJpas/junit/AssertTest.java
 
 ```java
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpas.junit;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -43,10 +43,10 @@ public class AssertTest {
 ```
 ---
 
-### /in28Minutes/git/getting-started-in-5-steps/junit-in-5-steps/test/com/in28minutes/junit/MyMathTest.java
+### /SpringbootPracticewithJpas/git/getting-started-in-5-steps/junit-in-5-steps/test/com/SpringbootPracticewithJpas/junit/MyMathTest.java
 
 ```java
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpas.junit;
 
 import static org.junit.Assert.assertEquals;
 

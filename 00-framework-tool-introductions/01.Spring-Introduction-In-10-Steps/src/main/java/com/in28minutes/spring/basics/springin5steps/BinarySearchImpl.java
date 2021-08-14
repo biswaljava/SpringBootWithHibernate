@@ -1,4 +1,4 @@
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpas.spring.basics.springin5steps;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

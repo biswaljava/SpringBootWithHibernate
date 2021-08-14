@@ -1,4 +1,4 @@
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo.repository;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
@@ -17,10 +17,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.hibernate.demo.DemoApplication;
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
-import com.in28minutes.jpa.hibernate.demo.entity.Review;
-import com.in28minutes.jpa.hibernate.demo.entity.Student;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.DemoApplication;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.Review;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.Student;
 
 @SpringBootTest(classes = DemoApplication.class)
 public class CourseRepositoryTest {

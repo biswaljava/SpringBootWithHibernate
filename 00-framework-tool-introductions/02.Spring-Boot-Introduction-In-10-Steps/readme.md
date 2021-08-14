@@ -52,7 +52,7 @@ http://localhost:8080/books => Few hardcoded books
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.springboot.basics</groupId>
+	<groupId>com.SpringbootPracticewithJpas.springboot.basics</groupId>
 	<artifactId>springboot-in-10-steps</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -161,10 +161,10 @@ http://localhost:8080/books => Few hardcoded books
 ```
 ---
 
-### /src/main/java/com/in28minutes/springboot/basics/springbootin10steps/Book.java
+### /src/main/java/com/SpringbootPracticewithJpas/springboot/basics/springbootin10steps/Book.java
 
 ```java
-package com.in28minutes.springboot.basics.springbootin10steps;
+package com.SpringbootPracticewithJpas.springboot.basics.springbootin10steps;
 
 public class Book {
 	long id;
@@ -199,10 +199,10 @@ public class Book {
 ```
 ---
 
-### /src/main/java/com/in28minutes/springboot/basics/springbootin10steps/BooksController.java
+### /src/main/java/com/SpringbootPracticewithJpas/springboot/basics/springbootin10steps/BooksController.java
 
 ```java
-package com.in28minutes.springboot.basics.springbootin10steps;
+package com.SpringbootPracticewithJpas.springboot.basics.springbootin10steps;
 
 import java.util.Arrays;
 import java.util.List;
@@ -221,10 +221,10 @@ public class BooksController {
 ```
 ---
 
-### /src/main/java/com/in28minutes/springboot/basics/springbootin10steps/SpringbootIn10StepsApplication.java
+### /src/main/java/com/SpringbootPracticewithJpas/springboot/basics/springbootin10steps/SpringbootIn10StepsApplication.java
 
 ```java
-package com.in28minutes.springboot.basics.springbootin10steps;
+package com.SpringbootPracticewithJpas.springboot.basics.springbootin10steps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -254,10 +254,10 @@ management.endpoints.web.exposure.include=*
 ```
 ---
 
-### /src/test/java/com/in28minutes/springboot/basics/springbootin10steps/SpringbootIn10StepsApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpas/springboot/basics/springbootin10steps/SpringbootIn10StepsApplicationTests.java
 
 ```java
-package com.in28minutes.springboot.basics.springbootin10steps;
+package com.SpringbootPracticewithJpas.springboot.basics.springbootin10steps;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

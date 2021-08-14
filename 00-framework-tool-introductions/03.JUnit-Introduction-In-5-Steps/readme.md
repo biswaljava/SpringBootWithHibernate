@@ -1,6 +1,6 @@
 ## First 5 Steps in JUnit
 
-- Git Repository - https://github.com/in28minutes/getting-started-in-5-steps
+- Git Repository - https://github.com/SpringbootPracticewithJpas/getting-started-in-5-steps
 - Pre-requisites - Java & Eclipse - https://www.youtube.com/playlist?list=PLBBog2r6uMCSmMVTW_QmDLyASBvovyAO3
 - We will use embedded maven in Eclipse
 
@@ -29,10 +29,10 @@
 ## Complete Code Example
 
 
-### /src/com/in28minutes/junit/MyMath.java
+### /src/com/SpringbootPracticewithJpas/junit/MyMath.java
 
 ```java
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpas.junit;
 
 public class MyMath {
 	int sum(int[] numbers) {
@@ -46,10 +46,10 @@ public class MyMath {
 ```
 ---
 
-### /test/com/in28minutes/junit/AssertTest.java
+### /test/com/SpringbootPracticewithJpas/junit/AssertTest.java
 
 ```java
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpas.junit;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -70,10 +70,10 @@ public class AssertTest {
 ```
 ---
 
-### /test/com/in28minutes/junit/MyMathTest.java
+### /test/com/SpringbootPracticewithJpas/junit/MyMathTest.java
 
 ```java
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpas.junit;
 
 import static org.junit.Assert.assertEquals;
 

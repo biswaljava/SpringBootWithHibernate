@@ -48,7 +48,7 @@ JpaBaseConfiguration#transactionManager matched:
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.learning.jpa</groupId>
+	<groupId>com.SpringbootPracticewithJpas.learning.jpa</groupId>
 	<artifactId>jpa-in-10-steps</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -146,10 +146,10 @@ JpaBaseConfiguration#transactionManager matched:
 ```
 ---
 
-### /src/main/java/com/in28minutes/learning/jpa/jpain10steps/entity/User.java
+### /src/main/java/com/SpringbootPracticewithJpas/learning/jpa/jpain10steps/entity/User.java
 
 ```java
-package com.in28minutes.learning.jpa.jpain10steps.entity;
+package com.SpringbootPracticewithJpas.learning.jpa.jpain10steps.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -197,10 +197,10 @@ public class User {
 ```
 ---
 
-### /src/main/java/com/in28minutes/learning/jpa/jpain10steps/JpaIn10StepsApplication.java
+### /src/main/java/com/SpringbootPracticewithJpas/learning/jpa/jpain10steps/JpaIn10StepsApplication.java
 
 ```java
-package com.in28minutes.learning.jpa.jpain10steps;
+package com.SpringbootPracticewithJpas.learning.jpa.jpain10steps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -215,10 +215,10 @@ public class JpaIn10StepsApplication {
 ```
 ---
 
-### /src/main/java/com/in28minutes/learning/jpa/jpain10steps/service/UserDAOService.java
+### /src/main/java/com/SpringbootPracticewithJpas/learning/jpa/jpain10steps/service/UserDAOService.java
 
 ```java
-package com.in28minutes.learning.jpa.jpain10steps.service;
+package com.SpringbootPracticewithJpas.learning.jpa.jpain10steps.service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -226,7 +226,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.learning.jpa.jpain10steps.entity.User;
+import com.SpringbootPracticewithJpas.learning.jpa.jpain10steps.entity.User;
 
 @Repository
 @Transactional
@@ -250,14 +250,14 @@ public class UserDAOService {
 ```
 ---
 
-### /src/main/java/com/in28minutes/learning/jpa/jpain10steps/service/UserRepository.java
+### /src/main/java/com/SpringbootPracticewithJpas/learning/jpa/jpain10steps/service/UserRepository.java
 
 ```java
-package com.in28minutes.learning.jpa.jpain10steps.service;
+package com.SpringbootPracticewithJpas.learning.jpa.jpain10steps.service;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.in28minutes.learning.jpa.jpain10steps.entity.User;
+import com.SpringbootPracticewithJpas.learning.jpa.jpain10steps.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Long>{
 
@@ -265,10 +265,10 @@ public interface UserRepository extends JpaRepository<User, Long>{
 ```
 ---
 
-### /src/main/java/com/in28minutes/learning/jpa/jpain10steps/UserDaoServiceCommandLineRunner.java
+### /src/main/java/com/SpringbootPracticewithJpas/learning/jpa/jpain10steps/UserDaoServiceCommandLineRunner.java
 
 ```java
-package com.in28minutes.learning.jpa.jpain10steps;
+package com.SpringbootPracticewithJpas.learning.jpa.jpain10steps;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -276,8 +276,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.in28minutes.learning.jpa.jpain10steps.entity.User;
-import com.in28minutes.learning.jpa.jpain10steps.service.UserDAOService;
+import com.SpringbootPracticewithJpas.learning.jpa.jpain10steps.entity.User;
+import com.SpringbootPracticewithJpas.learning.jpa.jpain10steps.service.UserDAOService;
 
 @Component
 public class UserDaoServiceCommandLineRunner implements CommandLineRunner{
@@ -299,10 +299,10 @@ public class UserDaoServiceCommandLineRunner implements CommandLineRunner{
 ```
 ---
 
-### /src/main/java/com/in28minutes/learning/jpa/jpain10steps/UserRepositoryCommandLineRunner.java
+### /src/main/java/com/SpringbootPracticewithJpas/learning/jpa/jpain10steps/UserRepositoryCommandLineRunner.java
 
 ```java
-package com.in28minutes.learning.jpa.jpain10steps;
+package com.SpringbootPracticewithJpas.learning.jpa.jpain10steps;
 
 import java.util.List;
 import java.util.Optional;
@@ -313,8 +313,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.in28minutes.learning.jpa.jpain10steps.entity.User;
-import com.in28minutes.learning.jpa.jpain10steps.service.UserRepository;
+import com.SpringbootPracticewithJpas.learning.jpa.jpain10steps.entity.User;
+import com.SpringbootPracticewithJpas.learning.jpa.jpain10steps.service.UserRepository;
 
 @Component
 public class UserRepositoryCommandLineRunner implements CommandLineRunner{
@@ -351,10 +351,10 @@ logging.level.org.springframework=debug
 ```
 ---
 
-### /src/test/java/com/in28minutes/learning/jpa/jpain10steps/JpaIn10StepsApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpas/learning/jpa/jpain10steps/JpaIn10StepsApplicationTests.java
 
 ```java
-package com.in28minutes.learning.jpa.jpain10steps;
+package com.SpringbootPracticewithJpas.learning.jpa.jpain10steps;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

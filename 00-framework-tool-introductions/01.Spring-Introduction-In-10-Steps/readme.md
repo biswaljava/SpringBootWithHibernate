@@ -22,7 +22,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.spring.basics</groupId>
+	<groupId>com.SpringbootPracticewithJpas.spring.basics</groupId>
 	<artifactId>spring-in-5-steps</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -108,10 +108,10 @@
 ```
 ---
 
-### /src/main/java/com/in28minutes/spring/basics/springin5steps/BinarySearchImpl.java
+### /src/main/java/com/SpringbootPracticewithJpas/spring/basics/springin5steps/BinarySearchImpl.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpas.spring.basics.springin5steps;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -134,10 +134,10 @@ public class BinarySearchImpl {
 ```
 ---
 
-### /src/main/java/com/in28minutes/spring/basics/springin5steps/BubbleSortAlgorithm.java
+### /src/main/java/com/SpringbootPracticewithJpas/spring/basics/springin5steps/BubbleSortAlgorithm.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpas.spring.basics.springin5steps;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
@@ -153,10 +153,10 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 ```
 ---
 
-### /src/main/java/com/in28minutes/spring/basics/springin5steps/QuickSortAlgorithm.java
+### /src/main/java/com/SpringbootPracticewithJpas/spring/basics/springin5steps/QuickSortAlgorithm.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpas.spring.basics.springin5steps;
 
 import org.springframework.stereotype.Component;
 
@@ -170,10 +170,10 @@ public class QuickSortAlgorithm implements SortAlgorithm {
 ```
 ---
 
-### /src/main/java/com/in28minutes/spring/basics/springin5steps/SortAlgorithm.java
+### /src/main/java/com/SpringbootPracticewithJpas/spring/basics/springin5steps/SortAlgorithm.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpas.spring.basics.springin5steps;
 
 public interface SortAlgorithm {
 	public int[] sort(int[] numbers);
@@ -181,10 +181,10 @@ public interface SortAlgorithm {
 ```
 ---
 
-### /src/main/java/com/in28minutes/spring/basics/springin5steps/SpringIn5StepsApplication.java
+### /src/main/java/com/SpringbootPracticewithJpas/spring/basics/springin5steps/SpringIn5StepsApplication.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpas.spring.basics.springin5steps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -224,9 +224,9 @@ logging.level.org.springframework = debug
 ### /src/main/resources/log.txt
 
 ```
-Searching directory [/in28Minutes/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/in28minutes/spring/basics/springin5steps] for files matching pattern [/in28Minutes/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/in28minutes/spring/basics/springin5steps/**/*.class]
-Identified candidate component class: file [/in28Minutes/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/in28minutes/spring/basics/springin5steps/BinarySearchImpl.class]
-Identified candidate component class: file [/in28Minutes/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/in28minutes/spring/basics/springin5steps/BubbleSortAlgorithm.class]
+Searching directory [/SpringbootPracticewithJpas/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/SpringbootPracticewithJpas/spring/basics/springin5steps] for files matching pattern [/SpringbootPracticewithJpas/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/SpringbootPracticewithJpas/spring/basics/springin5steps/**/*.class]
+Identified candidate component class: file [/SpringbootPracticewithJpas/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/SpringbootPracticewithJpas/spring/basics/springin5steps/BinarySearchImpl.class]
+Identified candidate component class: file [/SpringbootPracticewithJpas/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/SpringbootPracticewithJpas/spring/basics/springin5steps/BubbleSortAlgorithm.class]
 
 Creating instance of bean 'binarySearchImpl'
 Creating instance of bean 'bubbleSortAlgorithm'
@@ -242,10 +242,10 @@ Finished creating instance of bean 'binarySearchImpl'
 ```
 ---
 
-### /src/test/java/com/in28minutes/spring/basics/springin5steps/SpringIn5StepsApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpas/spring/basics/springin5steps/SpringIn5StepsApplicationTests.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpas.spring.basics.springin5steps;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpas.junit;
 
 import static org.junit.Assert.assertEquals;
 

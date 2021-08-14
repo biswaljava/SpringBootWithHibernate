@@ -1,4 +1,4 @@
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo.repository;
 
 import javax.persistence.EntityManager;
 
@@ -8,9 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
-import com.in28minutes.jpa.hibernate.demo.entity.Passport;
-import com.in28minutes.jpa.hibernate.demo.entity.Student;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.Passport;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.Student;
 
 @Repository
 @Transactional

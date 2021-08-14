@@ -61,7 +61,7 @@ JdbcTemplateAutoConfiguration.JdbcTemplateConfiguration#jdbcTemplate matched:
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.database</groupId>
+	<groupId>com.SpringbootPracticewithJpas.database</groupId>
 	<artifactId>database-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -162,10 +162,10 @@ JdbcTemplateAutoConfiguration.JdbcTemplateConfiguration#jdbcTemplate matched:
 ```
 ---
 
-### /src/main/java/com/in28minutes/database/databasedemo/entity/Person.java
+### /src/main/java/com/SpringbootPracticewithJpas/database/databasedemo/entity/Person.java
 
 ```java
-package com.in28minutes.database.databasedemo.entity;
+package com.SpringbootPracticewithJpas.database.databasedemo.entity;
 
 import java.util.Date;
 
@@ -246,10 +246,10 @@ public class Person {
 ```
 ---
 
-### /src/main/java/com/in28minutes/database/databasedemo/jdbc/PersonJbdcDao.java
+### /src/main/java/com/SpringbootPracticewithJpas/database/databasedemo/jdbc/PersonJbdcDao.java
 
 ```java
-package com.in28minutes.database.databasedemo.jdbc;
+package com.SpringbootPracticewithJpas.database.databasedemo.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -262,7 +262,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpas.database.databasedemo.entity.Person;
 
 @Repository
 public class PersonJbdcDao {
@@ -312,10 +312,10 @@ public class PersonJbdcDao {
 ```
 ---
 
-### /src/main/java/com/in28minutes/database/databasedemo/jpa/PersonJpaRepository.java
+### /src/main/java/com/SpringbootPracticewithJpas/database/databasedemo/jpa/PersonJpaRepository.java
 
 ```java
-package com.in28minutes.database.databasedemo.jpa;
+package com.SpringbootPracticewithJpas.database.databasedemo.jpa;
 
 import java.util.List;
 
@@ -326,7 +326,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpas.database.databasedemo.entity.Person;
 
 @Repository
 @Transactional
@@ -362,10 +362,10 @@ public class PersonJpaRepository {
 ```
 ---
 
-### /src/main/java/com/in28minutes/database/databasedemo/JpaDemoApplication.java
+### /src/main/java/com/SpringbootPracticewithJpas/database/databasedemo/JpaDemoApplication.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpas.database.databasedemo;
 
 import java.util.Date;
 
@@ -376,8 +376,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.database.databasedemo.entity.Person;
-import com.in28minutes.database.databasedemo.jpa.PersonJpaRepository;
+import com.SpringbootPracticewithJpas.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpas.database.databasedemo.jpa.PersonJpaRepository;
 
 @SpringBootApplication
 public class JpaDemoApplication implements CommandLineRunner {
@@ -410,10 +410,10 @@ public class JpaDemoApplication implements CommandLineRunner {
 ```
 ---
 
-### /src/main/java/com/in28minutes/database/databasedemo/SpringJdbcDemoApplication.java
+### /src/main/java/com/SpringbootPracticewithJpas/database/databasedemo/SpringJdbcDemoApplication.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpas.database.databasedemo;
 
 import java.util.Date;
 
@@ -424,8 +424,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.database.databasedemo.entity.Person;
-import com.in28minutes.database.databasedemo.jdbc.PersonJbdcDao;
+import com.SpringbootPracticewithJpas.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpas.database.databasedemo.jdbc.PersonJbdcDao;
 
 //@SpringBootApplication
 public class SpringJdbcDemoApplication implements CommandLineRunner {
@@ -493,10 +493,10 @@ VALUES(10003,  'Pieter', 'Amsterdam',sysdate());
 ```
 ---
 
-### /src/test/java/com/in28minutes/database/databasedemo/SpringJdbcDemoApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpas/database/databasedemo/SpringJdbcDemoApplicationTests.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpas.database.databasedemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

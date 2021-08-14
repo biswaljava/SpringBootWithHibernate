@@ -1,4 +1,4 @@
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo.repository;
 
 import java.util.List;
 
@@ -12,9 +12,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import com.in28minutes.jpa.hibernate.demo.DemoApplication;
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
-import com.in28minutes.jpa.hibernate.demo.entity.Student;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.DemoApplication;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.Student;
 
 @SpringBootTest(classes = DemoApplication.class)
 public class JPQLTest {

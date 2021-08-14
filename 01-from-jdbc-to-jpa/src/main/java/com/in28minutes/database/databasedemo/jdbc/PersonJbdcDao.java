@@ -1,4 +1,4 @@
-package com.in28minutes.database.databasedemo.jdbc;
+package com.SpringbootPracticewithJpas.database.databasedemo.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpas.database.databasedemo.entity.Person;
 
 @Repository
 public class PersonJbdcDao {

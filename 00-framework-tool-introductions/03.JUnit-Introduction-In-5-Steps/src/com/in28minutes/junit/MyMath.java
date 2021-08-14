@@ -1,4 +1,4 @@
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpas.junit;
 
 public class MyMath {
 	int sum(int[] numbers) {

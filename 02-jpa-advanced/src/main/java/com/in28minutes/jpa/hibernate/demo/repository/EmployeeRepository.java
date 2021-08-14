@@ -1,4 +1,4 @@
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo.repository;
 
 import java.util.List;
 
@@ -10,9 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.hibernate.demo.entity.Employee;
-import com.in28minutes.jpa.hibernate.demo.entity.FullTimeEmployee;
-import com.in28minutes.jpa.hibernate.demo.entity.PartTimeEmployee;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.Employee;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.FullTimeEmployee;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.PartTimeEmployee;
 
 @Repository
 @Transactional

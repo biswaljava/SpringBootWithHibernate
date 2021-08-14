@@ -1,4 +1,4 @@
-package com.in28minutes.jpa.hibernate.demo.entity;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

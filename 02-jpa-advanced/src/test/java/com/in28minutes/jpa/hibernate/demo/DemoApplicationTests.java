@@ -1,4 +1,4 @@
-package com.in28minutes.jpa.hibernate.demo;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

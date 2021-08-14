@@ -1,4 +1,4 @@
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpas.database.databasedemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

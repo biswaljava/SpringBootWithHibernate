@@ -10,7 +10,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.database</groupId>
+	<groupId>com.SpringbootPracticewithJpas.database</groupId>
 	<artifactId>database-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -111,10 +111,10 @@
 ```
 ---
 
-### /src/main/java/com/in28minutes/database/databasedemo/DatabaseDemoApplication.java
+### /src/main/java/com/SpringbootPracticewithJpas/database/databasedemo/DatabaseDemoApplication.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpas.database.databasedemo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -123,7 +123,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.database.databasedemo.jdbc.PersonJbdcDao;
+import com.SpringbootPracticewithJpas.database.databasedemo.jdbc.PersonJbdcDao;
 
 @SpringBootApplication
 public class DatabaseDemoApplication implements CommandLineRunner {
@@ -147,10 +147,10 @@ public class DatabaseDemoApplication implements CommandLineRunner {
 ```
 ---
 
-### /src/main/java/com/in28minutes/database/databasedemo/entity/Person.java
+### /src/main/java/com/SpringbootPracticewithJpas/database/databasedemo/entity/Person.java
 
 ```java
-package com.in28minutes.database.databasedemo.entity;
+package com.SpringbootPracticewithJpas.database.databasedemo.entity;
 
 import java.util.Date;
 
@@ -215,10 +215,10 @@ public class Person {
 ```
 ---
 
-### /src/main/java/com/in28minutes/database/databasedemo/jdbc/PersonJbdcDao.java
+### /src/main/java/com/SpringbootPracticewithJpas/database/databasedemo/jdbc/PersonJbdcDao.java
 
 ```java
-package com.in28minutes.database.databasedemo.jdbc;
+package com.SpringbootPracticewithJpas.database.databasedemo.jdbc;
 
 import java.util.List;
 
@@ -227,7 +227,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpas.database.databasedemo.entity.Person;
 
 @Repository
 public class PersonJbdcDao {
@@ -285,10 +285,10 @@ VALUES(10003,  'Pieter', 'Amsterdam',sysdate());
 ```
 ---
 
-### /src/test/java/com/in28minutes/database/databasedemo/DatabaseDemoApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpas/database/databasedemo/DatabaseDemoApplicationTests.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpas.database.databasedemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

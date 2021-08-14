@@ -10,7 +10,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.database</groupId>
+	<groupId>com.SpringbootPracticewithJpas.database</groupId>
 	<artifactId>database-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -111,10 +111,10 @@
 ```
 ---
 
-### /src/main/java/com/in28minutes/database/databasedemo/DatabaseDemoApplication.java
+### /src/main/java/com/SpringbootPracticewithJpas/database/databasedemo/DatabaseDemoApplication.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpas.database.databasedemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -135,10 +135,10 @@ public class DatabaseDemoApplication {
 ```
 ---
 
-### /src/test/java/com/in28minutes/database/databasedemo/DatabaseDemoApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpas/database/databasedemo/DatabaseDemoApplicationTests.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpas.database.databasedemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

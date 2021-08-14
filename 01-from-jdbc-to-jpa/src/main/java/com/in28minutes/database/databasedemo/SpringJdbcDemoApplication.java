@@ -1,4 +1,4 @@
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpas.database.databasedemo;
 
 import java.util.Date;
 
@@ -9,8 +9,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.database.databasedemo.entity.Person;
-import com.in28minutes.database.databasedemo.jdbc.PersonJbdcDao;
+import com.SpringbootPracticewithJpas.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpas.database.databasedemo.jdbc.PersonJbdcDao;
 
 //@SpringBootApplication
 public class SpringJdbcDemoApplication implements CommandLineRunner {

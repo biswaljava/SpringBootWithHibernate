@@ -1,4 +1,4 @@
-package com.in28minutes.jpa.hibernate.demo;
+package com.SpringbootPracticewithJpas.jpa.hibernate.demo;
 
 import java.math.BigDecimal;
 
@@ -9,11 +9,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.jpa.hibernate.demo.entity.FullTimeEmployee;
-import com.in28minutes.jpa.hibernate.demo.entity.PartTimeEmployee;
-import com.in28minutes.jpa.hibernate.demo.repository.CourseRepository;
-import com.in28minutes.jpa.hibernate.demo.repository.EmployeeRepository;
-import com.in28minutes.jpa.hibernate.demo.repository.StudentRepository;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.FullTimeEmployee;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.entity.PartTimeEmployee;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.repository.CourseRepository;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.repository.EmployeeRepository;
+import com.SpringbootPracticewithJpas.jpa.hibernate.demo.repository.StudentRepository;
 
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {

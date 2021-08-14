@@ -1,4 +1,4 @@
-package com.in28minutes.database.databasedemo.jpa;
+package com.SpringbootPracticewithJpas.database.databasedemo.jpa;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpas.database.databasedemo.entity.Person;
 
 @Repository
 @Transactional
