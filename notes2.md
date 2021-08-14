@@ -10,7 +10,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.in28minutes.jpa.hibernate</groupId>
+  <groupId>com.SpringbootPracticewithJpa.jpa.hibernate</groupId>
   <artifactId>app</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -145,10 +145,10 @@
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/app/AppApplication.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/AppApplication.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -163,10 +163,10 @@ public class AppApplication {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/app/entity/Course.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/entity/Course.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.entity;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -205,10 +205,10 @@ public class Course {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/app/entity/inheritance/Employee.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/entity/inheritance/Employee.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.entity.inheritance;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.inheritance;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -239,10 +239,10 @@ public abstract class Employee {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/app/entity/inheritance/FullTimeEmployee.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/entity/inheritance/FullTimeEmployee.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.entity.inheritance;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.inheritance;
 
 import java.math.BigDecimal;
 
@@ -262,10 +262,10 @@ public class FullTimeEmployee extends Employee {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/app/entity/inheritance/PartTimeEmployee.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/entity/inheritance/PartTimeEmployee.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.entity.inheritance;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.inheritance;
 
 import java.math.BigDecimal;
 
@@ -286,10 +286,10 @@ public class PartTimeEmployee extends Employee {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/app/entity/Student.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/entity/Student.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.entity;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.entity;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -354,10 +354,10 @@ public class Student {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/app/repository/CourseRepository.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/repository/CourseRepository.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.repository;
 
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
@@ -365,7 +365,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.jpa.hibernate.app.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.Course;
 
 @Repository
 @Transactional
@@ -394,10 +394,10 @@ public class CourseRepository {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/app/repository/EmployeeRepository.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/repository/EmployeeRepository.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.repository;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -406,7 +406,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.jpa.hibernate.app.entity.inheritance.Employee;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.inheritance.Employee;
 
 @Transactional
 @Repository
@@ -429,10 +429,10 @@ public class EmployeeRepository {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/hibernate/app/repository/StudentRepository.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/repository/StudentRepository.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.repository;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -444,7 +444,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.jpa.hibernate.app.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.Student;
 
 @Repository
 @Transactional
@@ -522,10 +522,10 @@ insert into course(id, name) values(10003,'Spring Boot in 100 Steps');
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/hibernate/app/AppApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/AppApplicationTests.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -544,10 +544,10 @@ public class AppApplicationTests {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/hibernate/app/repository/CourseRepositoryCriterialQueryTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/repository/CourseRepositoryCriterialQueryTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.repository;
 
 import static org.junit.Assert.assertEquals;
 
@@ -566,8 +566,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.hibernate.app.AppApplication;
-import com.in28minutes.jpa.hibernate.app.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.AppApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.Course;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = AppApplication.class)
@@ -612,10 +612,10 @@ public class CourseRepositoryCriterialQueryTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/hibernate/app/repository/CourseRepositoryJPQLTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/repository/CourseRepositoryJPQLTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.repository;
 
 import static org.junit.Assert.assertEquals;
 
@@ -631,8 +631,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.hibernate.app.AppApplication;
-import com.in28minutes.jpa.hibernate.app.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.AppApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.Course;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = AppApplication.class)
@@ -665,10 +665,10 @@ public class CourseRepositoryJPQLTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/hibernate/app/repository/CourseRepositoryTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/repository/CourseRepositoryTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.repository;
 
 import static org.junit.Assert.*;
 
@@ -678,8 +678,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.hibernate.app.AppApplication;
-import com.in28minutes.jpa.hibernate.app.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.AppApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.Course;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=AppApplication.class)
@@ -713,10 +713,10 @@ public class CourseRepositoryTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/hibernate/app/repository/InheritanceDemoApplicationTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/repository/InheritanceDemoApplicationTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.repository;
 import java.math.BigDecimal;
 
 import javax.persistence.EntityManager;
@@ -727,8 +727,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.hibernate.app.entity.inheritance.FullTimeEmployee;
-import com.in28minutes.jpa.hibernate.app.entity.inheritance.PartTimeEmployee;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.inheritance.FullTimeEmployee;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.inheritance.PartTimeEmployee;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest // (webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -753,10 +753,10 @@ public class InheritanceDemoApplicationTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/hibernate/app/repository/StudentRepositoryTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/repository/StudentRepositoryTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.repository;
 
 import static org.junit.Assert.assertEquals;
 
@@ -766,8 +766,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.hibernate.app.AppApplication;
-import com.in28minutes.jpa.hibernate.app.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.AppApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.app.entity.Course;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=AppApplication.class)
@@ -785,17 +785,17 @@ public class StudentRepositoryTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/hibernate/app/repository/TransactionManagementRepository.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/app/repository/TransactionManagementRepository.java
 
 ```java
-package com.in28minutes.jpa.hibernate.app.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.app.repository;
 import javax.persistence.EntityManager;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Passport;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Passport;
 
 @Repository
 @Transactional

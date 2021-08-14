@@ -10,7 +10,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.spring.basics</groupId>
+	<groupId>com.SpringbootPracticewithJpa.spring.basics</groupId>
 	<artifactId>spring-in-5-steps</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -96,10 +96,10 @@
 ```
 ---
 
-### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/in28minutes/spring/basics/springin5steps/BinarySearchImpl.java
+### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/SpringbootPracticewithJpa/spring/basics/springin5steps/BinarySearchImpl.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpa.spring.basics.springin5steps;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -122,10 +122,10 @@ public class BinarySearchImpl {
 ```
 ---
 
-### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/in28minutes/spring/basics/springin5steps/BubbleSortAlgorithm.java
+### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/SpringbootPracticewithJpa/spring/basics/springin5steps/BubbleSortAlgorithm.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpa.spring.basics.springin5steps;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
@@ -141,10 +141,10 @@ public class BubbleSortAlgorithm implements SortAlgorithm {
 ```
 ---
 
-### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/in28minutes/spring/basics/springin5steps/QuickSortAlgorithm.java
+### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/SpringbootPracticewithJpa/spring/basics/springin5steps/QuickSortAlgorithm.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpa.spring.basics.springin5steps;
 
 import org.springframework.stereotype.Component;
 
@@ -158,10 +158,10 @@ public class QuickSortAlgorithm implements SortAlgorithm {
 ```
 ---
 
-### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/in28minutes/spring/basics/springin5steps/SortAlgorithm.java
+### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/SpringbootPracticewithJpa/spring/basics/springin5steps/SortAlgorithm.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpa.spring.basics.springin5steps;
 
 public interface SortAlgorithm {
 	public int[] sort(int[] numbers);
@@ -169,10 +169,10 @@ public interface SortAlgorithm {
 ```
 ---
 
-### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/in28minutes/spring/basics/springin5steps/SpringIn5StepsApplication.java
+### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/java/com/SpringbootPracticewithJpa/spring/basics/springin5steps/SpringIn5StepsApplication.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpa.spring.basics.springin5steps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -212,9 +212,9 @@ logging.level.org.springframework = debug
 ### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/main/resources/log.txt
 
 ```
-Searching directory [/in28Minutes/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/in28minutes/spring/basics/springin5steps] for files matching pattern [/in28Minutes/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/in28minutes/spring/basics/springin5steps/**/*.class]
-Identified candidate component class: file [/in28Minutes/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/in28minutes/spring/basics/springin5steps/BinarySearchImpl.class]
-Identified candidate component class: file [/in28Minutes/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/in28minutes/spring/basics/springin5steps/BubbleSortAlgorithm.class]
+Searching directory [/SpringbootPracticewithJpa/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/SpringbootPracticewithJpa/spring/basics/springin5steps] for files matching pattern [/SpringbootPracticewithJpa/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/SpringbootPracticewithJpa/spring/basics/springin5steps/**/*.class]
+Identified candidate component class: file [/SpringbootPracticewithJpa/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/SpringbootPracticewithJpa/spring/basics/springin5steps/BinarySearchImpl.class]
+Identified candidate component class: file [/SpringbootPracticewithJpa/git/getting-started-in-5-steps/spring-in-5-steps/target/classes/com/SpringbootPracticewithJpa/spring/basics/springin5steps/BubbleSortAlgorithm.class]
 
 Creating instance of bean 'binarySearchImpl'
 Creating instance of bean 'bubbleSortAlgorithm'
@@ -230,10 +230,10 @@ Finished creating instance of bean 'binarySearchImpl'
 ```
 ---
 
-### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/test/java/com/in28minutes/spring/basics/springin5steps/SpringIn5StepsApplicationTests.java
+### /00-framework-tool-introductions/01.Spring-Introduction-In-10-Steps/src/test/java/com/SpringbootPracticewithJpa/spring/basics/springin5steps/SpringIn5StepsApplicationTests.java
 
 ```java
-package com.in28minutes.spring.basics.springin5steps;
+package com.SpringbootPracticewithJpa.spring.basics.springin5steps;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -290,7 +290,7 @@ http://localhost:8080/books => Few hardcoded books
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.springboot.basics</groupId>
+	<groupId>com.SpringbootPracticewithJpa.springboot.basics</groupId>
 	<artifactId>springboot-in-10-steps</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -399,10 +399,10 @@ http://localhost:8080/books => Few hardcoded books
 ```
 ---
 
-### /00-framework-tool-introductions/02.Spring-Boot-Introduction-In-10-Steps/src/main/java/com/in28minutes/springboot/basics/springbootin10steps/Book.java
+### /00-framework-tool-introductions/02.Spring-Boot-Introduction-In-10-Steps/src/main/java/com/SpringbootPracticewithJpa/springboot/basics/springbootin10steps/Book.java
 
 ```java
-package com.in28minutes.springboot.basics.springbootin10steps;
+package com.SpringbootPracticewithJpa.springboot.basics.springbootin10steps;
 
 public class Book {
 	long id;
@@ -437,10 +437,10 @@ public class Book {
 ```
 ---
 
-### /00-framework-tool-introductions/02.Spring-Boot-Introduction-In-10-Steps/src/main/java/com/in28minutes/springboot/basics/springbootin10steps/BooksController.java
+### /00-framework-tool-introductions/02.Spring-Boot-Introduction-In-10-Steps/src/main/java/com/SpringbootPracticewithJpa/springboot/basics/springbootin10steps/BooksController.java
 
 ```java
-package com.in28minutes.springboot.basics.springbootin10steps;
+package com.SpringbootPracticewithJpa.springboot.basics.springbootin10steps;
 
 import java.util.Arrays;
 import java.util.List;
@@ -459,10 +459,10 @@ public class BooksController {
 ```
 ---
 
-### /00-framework-tool-introductions/02.Spring-Boot-Introduction-In-10-Steps/src/main/java/com/in28minutes/springboot/basics/springbootin10steps/SpringbootIn10StepsApplication.java
+### /00-framework-tool-introductions/02.Spring-Boot-Introduction-In-10-Steps/src/main/java/com/SpringbootPracticewithJpa/springboot/basics/springbootin10steps/SpringbootIn10StepsApplication.java
 
 ```java
-package com.in28minutes.springboot.basics.springbootin10steps;
+package com.SpringbootPracticewithJpa.springboot.basics.springbootin10steps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -492,10 +492,10 @@ management.endpoints.web.exposure.include=*
 ```
 ---
 
-### /00-framework-tool-introductions/02.Spring-Boot-Introduction-In-10-Steps/src/test/java/com/in28minutes/springboot/basics/springbootin10steps/SpringbootIn10StepsApplicationTests.java
+### /00-framework-tool-introductions/02.Spring-Boot-Introduction-In-10-Steps/src/test/java/com/SpringbootPracticewithJpa/springboot/basics/springbootin10steps/SpringbootIn10StepsApplicationTests.java
 
 ```java
-package com.in28minutes.springboot.basics.springbootin10steps;
+package com.SpringbootPracticewithJpa.springboot.basics.springbootin10steps;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -514,10 +514,10 @@ public class SpringbootIn10StepsApplicationTests {
 ```
 ---
 
-### /00-framework-tool-introductions/03.JUnit-Introduction-In-5-Steps/src/com/in28minutes/junit/MyMath.java
+### /00-framework-tool-introductions/03.JUnit-Introduction-In-5-Steps/src/com/SpringbootPracticewithJpa/junit/MyMath.java
 
 ```java
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpa.junit;
 
 public class MyMath {
 	int sum(int[] numbers) {
@@ -531,10 +531,10 @@ public class MyMath {
 ```
 ---
 
-### /00-framework-tool-introductions/03.JUnit-Introduction-In-5-Steps/test/com/in28minutes/junit/AssertTest.java
+### /00-framework-tool-introductions/03.JUnit-Introduction-In-5-Steps/test/com/SpringbootPracticewithJpa/junit/AssertTest.java
 
 ```java
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpa.junit;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -555,10 +555,10 @@ public class AssertTest {
 ```
 ---
 
-### /00-framework-tool-introductions/03.JUnit-Introduction-In-5-Steps/test/com/in28minutes/junit/MyMathTest.java
+### /00-framework-tool-introductions/03.JUnit-Introduction-In-5-Steps/test/com/SpringbootPracticewithJpa/junit/MyMathTest.java
 
 ```java
-package com.in28minutes.junit;
+package com.SpringbootPracticewithJpa.junit;
 
 import static org.junit.Assert.assertEquals;
 
@@ -616,7 +616,7 @@ public class MyMathTest {
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.database</groupId>
+	<groupId>com.SpringbootPracticewithJpa.database</groupId>
 	<artifactId>database-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -717,10 +717,10 @@ public class MyMathTest {
 ```
 ---
 
-### /01-from-jdbc-to-jpa/src/main/java/com/in28minutes/database/databasedemo/entity/Person.java
+### /01-from-jdbc-to-jpa/src/main/java/com/SpringbootPracticewithJpa/database/databasedemo/entity/Person.java
 
 ```java
-package com.in28minutes.database.databasedemo.entity;
+package com.SpringbootPracticewithJpa.database.databasedemo.entity;
 
 import java.util.Date;
 
@@ -801,10 +801,10 @@ public class Person {
 ```
 ---
 
-### /01-from-jdbc-to-jpa/src/main/java/com/in28minutes/database/databasedemo/jdbc/PersonJbdcDao.java
+### /01-from-jdbc-to-jpa/src/main/java/com/SpringbootPracticewithJpa/database/databasedemo/jdbc/PersonJbdcDao.java
 
 ```java
-package com.in28minutes.database.databasedemo.jdbc;
+package com.SpringbootPracticewithJpa.database.databasedemo.jdbc;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -817,7 +817,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpa.database.databasedemo.entity.Person;
 
 @Repository
 public class PersonJbdcDao {
@@ -867,10 +867,10 @@ public class PersonJbdcDao {
 ```
 ---
 
-### /01-from-jdbc-to-jpa/src/main/java/com/in28minutes/database/databasedemo/jpa/PersonJpaRepository.java
+### /01-from-jdbc-to-jpa/src/main/java/com/SpringbootPracticewithJpa/database/databasedemo/jpa/PersonJpaRepository.java
 
 ```java
-package com.in28minutes.database.databasedemo.jpa;
+package com.SpringbootPracticewithJpa.database.databasedemo.jpa;
 
 import java.util.List;
 
@@ -881,7 +881,7 @@ import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpa.database.databasedemo.entity.Person;
 
 @Repository
 @Transactional
@@ -917,10 +917,10 @@ public class PersonJpaRepository {
 ```
 ---
 
-### /01-from-jdbc-to-jpa/src/main/java/com/in28minutes/database/databasedemo/JpaDemoApplication.java
+### /01-from-jdbc-to-jpa/src/main/java/com/SpringbootPracticewithJpa/database/databasedemo/JpaDemoApplication.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpa.database.databasedemo;
 
 import java.util.Date;
 
@@ -931,8 +931,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.database.databasedemo.entity.Person;
-import com.in28minutes.database.databasedemo.jpa.PersonJpaRepository;
+import com.SpringbootPracticewithJpa.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpa.database.databasedemo.jpa.PersonJpaRepository;
 
 @SpringBootApplication
 public class JpaDemoApplication implements CommandLineRunner {
@@ -965,10 +965,10 @@ public class JpaDemoApplication implements CommandLineRunner {
 ```
 ---
 
-### /01-from-jdbc-to-jpa/src/main/java/com/in28minutes/database/databasedemo/SpringJdbcDemoApplication.java
+### /01-from-jdbc-to-jpa/src/main/java/com/SpringbootPracticewithJpa/database/databasedemo/SpringJdbcDemoApplication.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpa.database.databasedemo;
 
 import java.util.Date;
 
@@ -979,8 +979,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.database.databasedemo.entity.Person;
-import com.in28minutes.database.databasedemo.jdbc.PersonJbdcDao;
+import com.SpringbootPracticewithJpa.database.databasedemo.entity.Person;
+import com.SpringbootPracticewithJpa.database.databasedemo.jdbc.PersonJbdcDao;
 
 //@SpringBootApplication
 public class SpringJdbcDemoApplication implements CommandLineRunner {
@@ -1048,10 +1048,10 @@ VALUES(10003,  'Pieter', 'Amsterdam',sysdate());
 ```
 ---
 
-### /01-from-jdbc-to-jpa/src/test/java/com/in28minutes/database/databasedemo/SpringJdbcDemoApplicationTests.java
+### /01-from-jdbc-to-jpa/src/test/java/com/SpringbootPracticewithJpa/database/databasedemo/SpringJdbcDemoApplicationTests.java
 
 ```java
-package com.in28minutes.database.databasedemo;
+package com.SpringbootPracticewithJpa.database.databasedemo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -1078,7 +1078,7 @@ public class SpringJdbcDemoApplicationTests {
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.in28minutes.jpa.hibernate</groupId>
+	<groupId>com.SpringbootPracticewithJpa.jpa.hibernate</groupId>
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
@@ -1175,10 +1175,10 @@ public class SpringJdbcDemoApplicationTests {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/DemoApplication.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/DemoApplication.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo;
 
 import java.math.BigDecimal;
 
@@ -1189,11 +1189,11 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.jpa.hibernate.demo.entity.FullTimeEmployee;
-import com.in28minutes.jpa.hibernate.demo.entity.PartTimeEmployee;
-import com.in28minutes.jpa.hibernate.demo.repository.CourseRepository;
-import com.in28minutes.jpa.hibernate.demo.repository.EmployeeRepository;
-import com.in28minutes.jpa.hibernate.demo.repository.StudentRepository;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.FullTimeEmployee;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.PartTimeEmployee;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository.CourseRepository;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository.EmployeeRepository;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository.StudentRepository;
 
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
@@ -1244,10 +1244,10 @@ public class DemoApplication implements CommandLineRunner {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/entity/Course.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/entity/Course.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.entity;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -1341,10 +1341,10 @@ public class Course {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/entity/Employee.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/entity/Employee.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.entity;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
@@ -1390,10 +1390,10 @@ public abstract class Employee {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/entity/FullTimeEmployee.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/entity/FullTimeEmployee.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.entity;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity;
 
 import java.math.BigDecimal;
 
@@ -1415,10 +1415,10 @@ public class FullTimeEmployee extends Employee {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/entity/PartTimeEmployee.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/entity/PartTimeEmployee.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.entity;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity;
 
 import java.math.BigDecimal;
 
@@ -1441,10 +1441,10 @@ public class PartTimeEmployee extends Employee {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/entity/Passport.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/entity/Passport.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.entity;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -1501,10 +1501,10 @@ public class Passport {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/entity/Review.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/entity/Review.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.entity;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -1570,10 +1570,10 @@ public class Review {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/entity/Student.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/entity/Student.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.entity;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -1650,10 +1650,10 @@ public class Student {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/repository/CourseRepository.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/CourseRepository.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import java.util.List;
 
@@ -1665,8 +1665,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
-import com.in28minutes.jpa.hibernate.demo.entity.Review;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Review;
 
 @Repository
 @Transactional
@@ -1743,14 +1743,14 @@ public class CourseRepository {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/repository/CourseSpringDataRepository.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/CourseSpringDataRepository.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Course;
 
 public interface CourseSpringDataRepository extends JpaRepository<Course, Long> {
 
@@ -1758,10 +1758,10 @@ public interface CourseSpringDataRepository extends JpaRepository<Course, Long> 
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/repository/EmployeeRepository.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/EmployeeRepository.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import java.util.List;
 
@@ -1773,9 +1773,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.hibernate.demo.entity.Employee;
-import com.in28minutes.jpa.hibernate.demo.entity.FullTimeEmployee;
-import com.in28minutes.jpa.hibernate.demo.entity.PartTimeEmployee;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Employee;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.FullTimeEmployee;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.PartTimeEmployee;
 
 @Repository
 @Transactional
@@ -1802,10 +1802,10 @@ public class EmployeeRepository {
 ```
 ---
 
-### /02-jpa-advanced/src/main/java/com/in28minutes/jpa/hibernate/demo/repository/StudentRepository.java
+### /02-jpa-advanced/src/main/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/StudentRepository.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import javax.persistence.EntityManager;
 
@@ -1815,9 +1815,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
-import com.in28minutes.jpa.hibernate.demo.entity.Passport;
-import com.in28minutes.jpa.hibernate.demo.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Passport;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Student;
 
 @Repository
 @Transactional
@@ -1978,10 +1978,10 @@ values(20001,10003);
 ```
 ---
 
-### /02-jpa-advanced/src/test/java/com/in28minutes/jpa/hibernate/demo/DemoApplicationTests.java
+### /02-jpa-advanced/src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/DemoApplicationTests.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -2000,10 +2000,10 @@ public class DemoApplicationTests {
 ```
 ---
 
-### /02-jpa-advanced/src/test/java/com/in28minutes/jpa/hibernate/demo/repository/CourseRepositoryTest.java
+### /02-jpa-advanced/src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/CourseRepositoryTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -2024,10 +2024,10 @@ import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.hibernate.demo.DemoApplication;
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
-import com.in28minutes.jpa.hibernate.demo.entity.Review;
-import com.in28minutes.jpa.hibernate.demo.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.DemoApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Review;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Student;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoApplication.class)
@@ -2127,10 +2127,10 @@ public class CourseRepositoryTest {
 ```
 ---
 
-### /02-jpa-advanced/src/test/java/com/in28minutes/jpa/hibernate/demo/repository/CourseSpringDataRepositoryTest.java
+### /02-jpa-advanced/src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/CourseSpringDataRepositoryTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -2148,8 +2148,8 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.hibernate.demo.DemoApplication;
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.DemoApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Course;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoApplication.class)
@@ -2202,10 +2202,10 @@ public class CourseSpringDataRepositoryTest {
 ```
 ---
 
-### /02-jpa-advanced/src/test/java/com/in28minutes/jpa/hibernate/demo/repository/CriteriaQueryTest.java
+### /02-jpa-advanced/src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/CriteriaQueryTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import java.util.List;
 
@@ -2226,8 +2226,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.hibernate.demo.DemoApplication;
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.DemoApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Course;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoApplication.class)
@@ -2376,10 +2376,10 @@ public class CriteriaQueryTest {
 ```
 ---
 
-### /02-jpa-advanced/src/test/java/com/in28minutes/jpa/hibernate/demo/repository/JPQLTest.java
+### /02-jpa-advanced/src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/JPQLTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import java.util.List;
 
@@ -2395,9 +2395,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.hibernate.demo.DemoApplication;
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
-import com.in28minutes.jpa.hibernate.demo.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.DemoApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Student;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoApplication.class)
@@ -2516,10 +2516,10 @@ public class JPQLTest {
 ```
 ---
 
-### /02-jpa-advanced/src/test/java/com/in28minutes/jpa/hibernate/demo/repository/NativeQueriesTest.java
+### /02-jpa-advanced/src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/NativeQueriesTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import java.util.List;
 
@@ -2536,8 +2536,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.hibernate.demo.DemoApplication;
-import com.in28minutes.jpa.hibernate.demo.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.DemoApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Course;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoApplication.class)
@@ -2588,10 +2588,10 @@ public class NativeQueriesTest {
 ```
 ---
 
-### /02-jpa-advanced/src/test/java/com/in28minutes/jpa/hibernate/demo/repository/StudentRepositoryTest.java
+### /02-jpa-advanced/src/test/java/com/SpringbootPracticewithJpa/jpa/hibernate/demo/repository/StudentRepositoryTest.java
 
 ```java
-package com.in28minutes.jpa.hibernate.demo.repository;
+package com.SpringbootPracticewithJpa.jpa.hibernate.demo.repository;
 
 import javax.persistence.EntityManager;
 
@@ -2604,9 +2604,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.hibernate.demo.DemoApplication;
-import com.in28minutes.jpa.hibernate.demo.entity.Passport;
-import com.in28minutes.jpa.hibernate.demo.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.DemoApplication;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Passport;
+import com.SpringbootPracticewithJpa.jpa.hibernate.demo.entity.Student;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoApplication.class)

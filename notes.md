@@ -333,7 +333,7 @@ query.setMaxResults(10);
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.in28minutes.jpa</groupId>
+  <groupId>com.SpringbootPracticewithJpa.jpa</groupId>
   <artifactId>jpa-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -473,18 +473,18 @@ query.setMaxResults(10);
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/controller/CourseController.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/controller/CourseController.java
 
 ```java
-package com.in28minutes.jpa.jpademo.controller;
+package com.SpringbootPracticewithJpa.jpa.jpademo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Course;
-import com.in28minutes.jpa.jpademo.relationships.repository.CourseRepository;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository.CourseRepository;
 
 @RestController
 public class CourseController {
@@ -500,10 +500,10 @@ public class CourseController {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/embedded/entity/Name.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/embedded/entity/Name.java
 
 ```java
-package com.in28minutes.jpa.jpademo.embedded.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.embedded.entity;
 
 import javax.persistence.Embeddable;
 import javax.persistence.Entity;
@@ -524,11 +524,11 @@ public class Name {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/embedded/entity/Person.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/embedded/entity/Person.java
 
 ```java
 
-package com.in28minutes.jpa.jpademo.embedded.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.embedded.entity;
 
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
@@ -550,10 +550,10 @@ public class Person {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/inheritence/entity/Employee.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/inheritence/entity/Employee.java
 
 ```java
-package com.in28minutes.jpa.jpademo.inheritence.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.inheritence.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -585,10 +585,10 @@ public abstract class Employee {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/inheritence/entity/FullTimeEmployee.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/inheritence/entity/FullTimeEmployee.java
 
 ```java
-package com.in28minutes.jpa.jpademo.inheritence.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.inheritence.entity;
 
 import java.math.BigDecimal;
 
@@ -608,10 +608,10 @@ public class FullTimeEmployee extends Employee {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/inheritence/entity/PartTimeEmployee.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/inheritence/entity/PartTimeEmployee.java
 
 ```java
-package com.in28minutes.jpa.jpademo.inheritence.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.inheritence.entity;
 
 import java.math.BigDecimal;
 
@@ -632,10 +632,10 @@ public class PartTimeEmployee extends Employee {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/inheritence/repository/EmployeeRepository.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/inheritence/repository/EmployeeRepository.java
 
 ```java
-package com.in28minutes.jpa.jpademo.inheritence.repository;
+package com.SpringbootPracticewithJpa.jpa.jpademo.inheritence.repository;
 
 import java.util.List;
 
@@ -645,7 +645,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.jpa.jpademo.inheritence.entity.Employee;
+import com.SpringbootPracticewithJpa.jpa.jpademo.inheritence.entity.Employee;
 
 @Transactional
 @Repository
@@ -668,18 +668,18 @@ public class EmployeeRepository {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/JpaDemoApplication.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/JpaDemoApplication.java
 
 ```java
-package com.in28minutes.jpa.jpademo;
+package com.SpringbootPracticewithJpa.jpa.jpademo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.in28minutes.jpa.jpademo.inheritence.repository.EmployeeRepository;
-import com.in28minutes.jpa.jpademo.relationships.repository.StudentRepository;
+import com.SpringbootPracticewithJpa.jpa.jpademo.inheritence.repository.EmployeeRepository;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository.StudentRepository;
 
 @SpringBootApplication
 public class JpaDemoApplication implements CommandLineRunner {
@@ -702,10 +702,10 @@ public class JpaDemoApplication implements CommandLineRunner {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/entity/Course.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/entity/Course.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -812,10 +812,10 @@ public class Course {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/entity/Passport.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/entity/Passport.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -877,10 +877,10 @@ public class Passport {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/entity/Review.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/entity/Review.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Enumerated;
@@ -945,20 +945,20 @@ public class Review {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/entity/ReviewRating.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/entity/ReviewRating.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity;
 public enum ReviewRating {
   ONE,TWO,THREE,FOUR,FIVE
 }
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/entity/Student.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/entity/Student.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -1074,20 +1074,20 @@ public class Student {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/entity/StudentType.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/entity/StudentType.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.entity;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity;
 public enum StudentType {
   FullTime, PartTime
 }
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/repository/CourseRepository.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/repository/CourseRepository.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.repository;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository;
 
 import java.util.List;
 
@@ -1099,10 +1099,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Course;
-import com.in28minutes.jpa.jpademo.relationships.entity.Course_;
-import com.in28minutes.jpa.jpademo.relationships.entity.Review;
-import com.in28minutes.jpa.jpademo.relationships.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Course_;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Review;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Student;
 
 @Repository
 @Transactional
@@ -1180,10 +1180,10 @@ public class CourseRepository {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/repository/EntityManagerRepository.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/repository/EntityManagerRepository.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.repository;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository;
 
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
@@ -1191,7 +1191,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Passport;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Passport;
 
 @Repository
 @Transactional
@@ -1217,10 +1217,10 @@ public class EntityManagerRepository {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/repository/StudentRepository.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/repository/StudentRepository.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.repository;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository;
 
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
@@ -1228,10 +1228,10 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Course;
-import com.in28minutes.jpa.jpademo.relationships.entity.Passport;
-import com.in28minutes.jpa.jpademo.relationships.entity.Review;
-import com.in28minutes.jpa.jpademo.relationships.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Passport;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Review;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Student;
 
 @Repository
 @Transactional
@@ -1251,10 +1251,10 @@ public class StudentRepository {
 ```
 ---
 
-### /src/main/java/com/in28minutes/jpa/jpademo/relationships/repository/TransactionManagementRepository.java
+### /src/main/java/com/SpringbootPracticewithJpa/jpa/jpademo/relationships/repository/TransactionManagementRepository.java
 
 ```java
-package com.in28minutes.jpa.jpademo.relationships.repository;
+package com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository;
 
 import javax.persistence.EntityManager;
 
@@ -1262,7 +1262,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Passport;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Passport;
 
 @Repository
 @Transactional
@@ -1305,10 +1305,10 @@ values(10101,'Caching in 100 Steps');
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/jpademo/CriteriaQueryDemoApplicationTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/jpademo/CriteriaQueryDemoApplicationTest.java
 
 ```java
-package com.in28minutes.jpa.jpademo;
+package com.SpringbootPracticewithJpa.jpa.jpademo;
 
 import static org.junit.Assert.assertEquals;
 
@@ -1329,9 +1329,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Course;
-import com.in28minutes.jpa.jpademo.relationships.entity.Course_;
-import com.in28minutes.jpa.jpademo.relationships.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Course_;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Student;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest // (webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -1441,10 +1441,10 @@ public class CriteriaQueryDemoApplicationTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/jpademo/EntityManagerDemoApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/jpademo/EntityManagerDemoApplicationTests.java
 
 ```java
-package com.in28minutes.jpa.jpademo;
+package com.SpringbootPracticewithJpa.jpa.jpademo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -1452,7 +1452,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.jpademo.relationships.repository.EntityManagerRepository;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository.EntityManagerRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest // (webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -1469,10 +1469,10 @@ public class EntityManagerDemoApplicationTests {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/jpademo/InheritanceDemoApplicationTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/jpademo/InheritanceDemoApplicationTest.java
 
 ```java
-package com.in28minutes.jpa.jpademo;
+package com.SpringbootPracticewithJpa.jpa.jpademo;
 
 import java.math.BigDecimal;
 
@@ -1484,9 +1484,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.jpademo.inheritence.entity.FullTimeEmployee;
-import com.in28minutes.jpa.jpademo.inheritence.entity.PartTimeEmployee;
-import com.in28minutes.jpa.jpademo.inheritence.repository.EmployeeRepository;
+import com.SpringbootPracticewithJpa.jpa.jpademo.inheritence.entity.FullTimeEmployee;
+import com.SpringbootPracticewithJpa.jpa.jpademo.inheritence.entity.PartTimeEmployee;
+import com.SpringbootPracticewithJpa.jpa.jpademo.inheritence.repository.EmployeeRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest // (webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -1511,10 +1511,10 @@ public class InheritanceDemoApplicationTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/jpademo/JpaDemoApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/jpademo/JpaDemoApplicationTests.java
 
 ```java
-package com.in28minutes.jpa.jpademo;
+package com.SpringbootPracticewithJpa.jpa.jpademo;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -1529,14 +1529,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Course;
-import com.in28minutes.jpa.jpademo.relationships.entity.Passport;
-import com.in28minutes.jpa.jpademo.relationships.entity.Review;
-import com.in28minutes.jpa.jpademo.relationships.entity.ReviewRating;
-import com.in28minutes.jpa.jpademo.relationships.entity.Student;
-import com.in28minutes.jpa.jpademo.relationships.entity.StudentType;
-import com.in28minutes.jpa.jpademo.relationships.repository.CourseRepository;
-import com.in28minutes.jpa.jpademo.relationships.repository.StudentRepository;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Passport;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Review;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.ReviewRating;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.StudentType;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository.CourseRepository;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository.StudentRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest // (webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -1599,10 +1599,10 @@ public class JpaDemoApplicationTests {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/jpademo/JPQLDemoApplicationTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/jpademo/JPQLDemoApplicationTest.java
 
 ```java
-package com.in28minutes.jpa.jpademo;
+package com.SpringbootPracticewithJpa.jpa.jpademo;
 
 import static org.junit.Assert.assertEquals;
 
@@ -1619,8 +1619,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Course;
-import com.in28minutes.jpa.jpademo.relationships.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Student;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest // (webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -1732,10 +1732,10 @@ public class JPQLDemoApplicationTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/jpademo/NativeQueriesDemoApplicationTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/jpademo/NativeQueriesDemoApplicationTest.java
 
 ```java
-package com.in28minutes.jpa.jpademo;
+package com.SpringbootPracticewithJpa.jpa.jpademo;
 
 import static org.junit.Assert.assertEquals;
 
@@ -1753,8 +1753,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Course;
-import com.in28minutes.jpa.jpademo.relationships.entity.Student;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Course;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Student;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest // (webEnvironment = WebEnvironment.RANDOM_PORT)
@@ -1901,10 +1901,10 @@ public class NativeQueriesDemoApplicationTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/jpademo/PerformanceDemoApplicationTest.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/jpademo/PerformanceDemoApplicationTest.java
 
 ```java
-package com.in28minutes.jpa.jpademo;
+package com.SpringbootPracticewithJpa.jpa.jpademo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -1912,7 +1912,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.jpademo.relationships.repository.CourseRepository;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository.CourseRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -1933,10 +1933,10 @@ public class PerformanceDemoApplicationTest {
 ```
 ---
 
-### /src/test/java/com/in28minutes/jpa/jpademo/TransactionManagementDemoApplicationTests.java
+### /src/test/java/com/SpringbootPracticewithJpa/jpa/jpademo/TransactionManagementDemoApplicationTests.java
 
 ```java
-package com.in28minutes.jpa.jpademo;
+package com.SpringbootPracticewithJpa.jpa.jpademo;
 
 import static org.junit.Assert.assertNull;
 
@@ -1948,8 +1948,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.in28minutes.jpa.jpademo.relationships.entity.Passport;
-import com.in28minutes.jpa.jpademo.relationships.repository.TransactionManagementRepository;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.entity.Passport;
+import com.SpringbootPracticewithJpa.jpa.jpademo.relationships.repository.TransactionManagementRepository;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest // (webEnvironment = WebEnvironment.RANDOM_PORT)
